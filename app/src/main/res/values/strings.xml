@@ -5,4 +5,9 @@
     <string name="password">Пароль</string>
     <string name="login">Войти</string>
     <string name="registration">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="second_name">Фамилия</string>
+    <string name="password_repeat">Повторите пароль</string>
+    <string name="singUp">Зарегистрироваться</string>
+    <string name="account_have">У меня уже есть аккаунт</string>
 </resources>
