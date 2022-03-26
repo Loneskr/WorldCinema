@@ -87,15 +87,43 @@
                 android:gravity="center">
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSelectIcon"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"/>
+                    android:layout_height="60dp"
+                    android:textColor="@color/orange"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:strokeColor="@color/gray"
+                    app:strokeWidth="2dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:text="Выбрать иконку"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"></LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bntSaveCollection"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Сохранить"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 
