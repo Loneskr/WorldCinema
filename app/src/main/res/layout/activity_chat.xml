@@ -47,25 +47,13 @@
         android:gravity="bottom"
         android:layout_marginBottom="15dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtMessage"
-            style="@style/TextInputLayoutStyle"
-            android:textColorHint="#AFAFAF"
-            android:hint="Напишите сообщение"
-            android:layout_gravity="bottom"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_width="320dp"
-            android:layout_height="50dp">
-
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/txtEditMessage"
-                android:layout_width="match_parent"
+                android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:hint="Напишите сообщение"
                 android:inputType="text"
                 android:textColor="@color/gray"/>
-        </com.google.android.material.textfield.TextInputLayout>
 
         <FrameLayout
             android:id="@+id/frameSendImage"

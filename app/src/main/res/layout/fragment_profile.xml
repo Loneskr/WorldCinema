@@ -151,9 +151,8 @@
                     app:srcCompat="@drawable/arrow" />
             </LinearLayout>
         </LinearLayout>
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btnSignOut"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"

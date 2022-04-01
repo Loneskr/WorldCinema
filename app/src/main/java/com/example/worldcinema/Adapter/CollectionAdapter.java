@@ -55,7 +55,7 @@ public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.Vi
 
         private ViewHolder(View view) {
             super(view);
-            this.iconCollection = (ImageView) view.findViewById(R.id.iconCollection);
+            this.iconCollection = (ImageView) view.findViewById(R.id.imgCollection);
             this.txtCollection = (TextView) view.findViewById(R.id.txtCollection);
         }
 

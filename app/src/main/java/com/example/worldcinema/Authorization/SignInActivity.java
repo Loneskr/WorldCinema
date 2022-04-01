@@ -5,11 +5,12 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.worldcinema.MainActivity;
+import com.example.worldcinema.Menu.MainActivity;
 import com.example.worldcinema.Network.Handler.ApiHandler;
 import com.example.worldcinema.Network.Handler.ErrorUtils;
 import com.example.worldcinema.Network.Models.LoginBody;
@@ -25,7 +26,7 @@ import retrofit2.Response;
 public class SignInActivity extends AppCompatActivity {
 
     private static final String TAG = "SignInActivity";
-    private TextInputEditText editEmail, editPassword;
+    private EditText editEmail, editPassword;
 
     private SharedPreferences.Editor editor;
     private SharedPreferences preferences;
@@ -52,7 +53,7 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     public void goToSignUp(View view) {
-        startActivity(new Intent(SignInActivity.this, SignInActivity.class));
+        startActivity(new Intent(SignInActivity.this, SignUpActivity.class));
         finish();
     }
 

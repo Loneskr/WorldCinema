@@ -24,43 +24,21 @@
         android:textStyle="bold"
         android:textSize="30dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_input_email"
-        style="@style/TextInputLayoutStyle"
-        android:textColorHint="#AFAFAF"
-        android:hint="@string/email"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/text_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:textColor="@color/gray"/>
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_input_password"
-        style="@style/TextInputLayoutStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="#AFAFAF"
-        android:hint="@string/password"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/text_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:textColor="@color/gray"/>
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnLogIn"
@@ -75,7 +53,7 @@
         android:text="@string/login"
         android:onClick="goToMenu"/>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="50dp"

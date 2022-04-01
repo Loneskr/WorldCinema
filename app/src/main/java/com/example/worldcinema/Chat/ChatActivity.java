@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,7 +38,7 @@ public class ChatActivity extends AppCompatActivity {
     private ChatAdapter chatAdapter;
     private LinearLayoutManager linearLayoutManager;
     private RecyclerView recyclerView;
-    private TextInputEditText message;
+    private EditText message;
     private String movieId, chatId;
     private Bundle bundle;
     private TextView txtNameMovie;

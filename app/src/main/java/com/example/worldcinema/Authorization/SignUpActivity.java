@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,8 +26,8 @@ import retrofit2.Response;
 public class SignUpActivity extends AppCompatActivity {
     private IApiService service = RegistrationHandler.getInstance().getService();
     private Button btnRegister;
-    private MaterialButton btnHaveAccount;
-    private TextInputEditText editTextEmail, editTextFirstName, editTextLastName, editTextPassword, editTextRepeatPassword;
+    private Button btnHaveAccount;
+    private EditText editTextEmail, editTextFirstName, editTextLastName, editTextPassword, editTextRepeatPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
