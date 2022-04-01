@@ -62,12 +62,12 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v =inflater.inflate(R.layout.fragment_profile, container, false);
-        txtName = v.findViewById(R.id.txt_profile_name);
-        txtEmail = v.findViewById(R.id.txt_profile_email);
-        imgProfile = v.findViewById(R.id.img_profile_photo);
+        View view =inflater.inflate(R.layout.fragment_profile, container, false);
+        txtName = view.findViewById(R.id.txt_profile_name);
+        txtEmail = view.findViewById(R.id.txt_profile_email);
+        imgProfile = view.findViewById(R.id.img_profile_photo);
 
-        linearDiscussions = v.findViewById(R.id.linear_layout);
+        linearDiscussions = view.findViewById(R.id.linear_layout);
         linearDiscussions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,7 +75,7 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        MaterialButton materialButton = v.findViewById(R.id.btnSignOut);
+        MaterialButton materialButton = view.findViewById(R.id.btnSignOut);
         materialButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,7 +84,7 @@ public class ProfileFragment extends Fragment {
             }
         });
         getUserInfo();
-        return v;
+        return view;
     }
 
     private void startAuthorizationActivity(){
