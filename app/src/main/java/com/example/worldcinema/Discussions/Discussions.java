@@ -35,8 +35,6 @@ public class Discussions {
         this.discChatText = discChatText;
     }
 
-    //TODO content
-
     public void getContent() {
 
     }
